@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <embed src=“pathname/filename”>, “pathname/filename”
+<body>
+
+<h1>Do you have what it takes to be an FBI Agent? Click Below to find out.</h1>
+
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'FBI Agent Quiz Here';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
